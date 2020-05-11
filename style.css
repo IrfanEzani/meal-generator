@@ -12,6 +12,7 @@ body {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   background:url('bg.jpg');
+  background-position:bottom;
   background-size: cover;
   color: brown;
 }
@@ -22,7 +23,6 @@ body {
    align-items: center;
    min-height: 100vh;
    min-width: 100vw;
-   background: linear-gradient(60deg, rgba(215, 166, 217, 0.4), rgba(0, 0, 0, 0.2));
  }
 
  .main h3 {
@@ -59,4 +59,10 @@ button:hover {
 
 button:active {
   border: 2px solid white;
+}
+
+#meal-container {
+  background: rgba(255,255, 255, 0.7);
+  margin: 1rem;
+  padding: 1rem;
 }
