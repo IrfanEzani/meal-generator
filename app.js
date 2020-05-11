@@ -23,6 +23,7 @@ function createMeal(meal) {
 
   mealContainer.innerHTML = `
   <div class="row">
+
 			<div class="side">
 				<img src="${meal.strMealThumb}" alt="Meal Image">
         <div class="ingredients">
@@ -34,22 +35,29 @@ function createMeal(meal) {
          </ul>
         </div>
       </div>
-      <div class="main-recipe">
+
+    <div class="main-recipe">
       <div class="food-intro">
       <h2>${meal.strMeal}</h2>
       <p class="intro"><strong>Style: </strong>${meal.strArea}</p>
       <p class="intro"><strong>Category: </strong>${meal.strCategory}</p>
+
+        <div class="buttons">
+          <button type="button" name="button">
+          <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
+          </button>
+          <button type="button" name="button">
+          <a href="${meal.strSource}" target="_blank">Source</a>
+          </button>
+        </div>
+
       </div>
+
+      <div class="recipe">
       <h3>Recipe: </h3>
       <p>${meal.strInstructions}</p>
-
-       <div class="vid-container">
-         <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
-       </div>
-       <div class="footer">
-       <a href="${meal.strSource}" target="_blank">Source</a>
-       </div>
       </div>
+    </div>
 
   </div>
         `;

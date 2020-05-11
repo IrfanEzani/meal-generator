@@ -81,23 +81,27 @@ button:active {
 }
 
 .side img {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   border-radius: 10px;
   margin: 1rem 0;
 }
 
 .side .ingredients {
+  margin: 1rem 0;
   padding: 1rem;
   border-radius: 25px;
   border: 3px solid pink;
   background: white;
+  min-height: 500px;
 }
 
 .side .ingredients h4 {
+  padding: 1rem 0 0.5rem 0;
   font-size: 1.5rem;
   color: brown;
-  font-weight: 700;
+  font-weight: 800;
+
 }
 
 .side .ingredients ul{
@@ -113,22 +117,22 @@ button:active {
 }
 
 .food-intro {
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 25px;
   box-shadow: 0 0 15px 5px pink;
-  margin: 1rem 0;
-  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
   text-align: left;
   background: white;
-
 }
 
 .food-intro h2 {
   margin-bottom: 10px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: brown;
 }
@@ -136,4 +140,53 @@ button:active {
 .food-intro .intro {
   font-size: 1.5rem;
   letter-spacing: 1px;
+}
+
+.food-intro .buttons {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.buttons a{
+  color: black;
+  text-decoration: none;
+}
+
+.buttons button {
+  background: pink;
+  border: none;
+  padding: 10px;
+  margin-right:1rem;
+  border: 2px solid pink;
+  transition: 0.5s all ease;
+}
+
+.buttons button:hover {
+  border: 2px solid black;
+  background: none;
+}
+
+.buttons  button:active {
+  border: 2px solid pink;
+}
+
+.recipe {
+  border: 3px solid brown;
+  border-radius: 25px;
+  padding: 1.2rem;
+  margin: 2rem 0;
+  background: white;
+  color: black;
+  min-height: 500px;
+  overflow: auto;
+}
+
+.recipe h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.recipe p {
+  line-height: 25px;
 }
