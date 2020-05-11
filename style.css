@@ -22,7 +22,7 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   min-width: 100vw;
+   max-width: 100vw;
  }
 
  .main h3 {
@@ -62,7 +62,78 @@ button:active {
 }
 
 #meal-container {
-  background: rgba(255,255, 255, 0.7);
   margin: 1rem;
   padding: 1rem;
+  color: black;
+}
+
+#meal-container .row {
+  background: rgba(255,255, 255, 0.7);
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.side {
+  margin: 0 2rem;
+  padding: 0 0 0 1rem;
+}
+
+.side img {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.side .ingredients {
+  padding: 1rem;
+  border-radius: 25px;
+  border: 3px solid pink;
+  background: white;
+}
+
+.side .ingredients h4 {
+  font-size: 1.5rem;
+  color: brown;
+  font-weight: 700;
+}
+
+.side .ingredients ul{
+  font-size: 1rem;
+  list-style: none;
+  padding: 1rem 0;
+  line-height: 25px;
+}
+
+.main-recipe {
+  margin: 0 2rem;
+  padding: 0 1rem 0 0;
+}
+
+.food-intro {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 0 0 15px 5px pink;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: left;
+  background: white;
+
+}
+
+.food-intro h2 {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: brown;
+}
+
+.food-intro .intro {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }

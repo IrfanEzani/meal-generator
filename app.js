@@ -23,26 +23,34 @@ function createMeal(meal) {
 
   mealContainer.innerHTML = `
   <div class="row">
-			<div class="columns five">
+			<div class="side">
 				<img src="${meal.strMealThumb}" alt="Meal Image">
-        <p><strong>Category:</strong>${meal.strCategory}</p>
-        <p><strong>Country:</strong>${meal.strArea}</p>
+        <div class="ingredients">
+        <h4>Ingredients:</h4>
+        <ul>
+        ${ingredients.map(ingredient =>
+          `<li>${ingredient}</li>`
+        ).join('')}
+         </ul>
+        </div>
       </div>
-      <div class="column seven">
-      <h2>${meal.strMeal}<h2>
+      <div class="main-recipe">
+      <div class="food-intro">
+      <h2>${meal.strMeal}</h2>
+      <p class="intro"><strong>Style: </strong>${meal.strArea}</p>
+      <p class="intro"><strong>Category: </strong>${meal.strCategory}</p>
+      </div>
+      <h3>Recipe: </h3>
       <p>${meal.strInstructions}</p>
-      <ul>ingredients:
-      ${ingredients.map(ingredient =>
-        `<li>${ingredient}</li>`
-      ).join('')}
-       </ul>
+
+       <div class="vid-container">
+         <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
+       </div>
+       <div class="footer">
+       <a href="${meal.strSource}" target="_blank">Source</a>
+       </div>
       </div>
-      <div class="vid-container">
-        <a href="${meal.strYoutube}" target="_blank">Video Tutorial</a>
-      </div>
-      <div class="footer">
-      <a href="${meal.strSource}" target="_blank">Source</a>
-      </div>
+
   </div>
         `;
 };
