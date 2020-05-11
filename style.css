@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  background:url('bg.jpg') rgba(0,0,0, 0.2);
+  background-size: cover;
+}
+ .main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
